@@ -10,7 +10,7 @@
     <com.hr.tvplayer.SampleVideo
         android:id="@+id/video_player"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true" />
 
     <Button
