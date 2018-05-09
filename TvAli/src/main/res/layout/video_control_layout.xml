@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="false">
+    <RelativeLayout
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="false"
+            android:background="#99000000"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/btnKaiBo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开播"
+                android:focusable="true"
+                />
+            <LinearLayout
+                android:focusable="false"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/progress"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:isb_indicator_custom_top_content_layout="@layout/custom_top_content_view_rect_without_progress"
+                    app:isb_indicator_type="rectangle_rounded_corner"
+                    app:isb_thumb_color="#FFFFFF"
+                    app:isb_track_progress_bar_color="@color/colorPrimary"
+                    />
+                <LinearLayout
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+                    <TextView
+                        android:focusable="false"
+                        android:id="@+id/current"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="00:00"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" / "
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:focusable="false"
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:text="00:00"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/load_relayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        >
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
