@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(switchVideoModel);
         list.add(switchVideoModel2);
 
-        videoPlayer.setUp(list, true, "测试视频");
+        videoPlayer.setUp(list, false, "测试视频");
 
         //增加封面
         ImageView imageView = new ImageView(this);
