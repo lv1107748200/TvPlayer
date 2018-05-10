@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         //videoPlayer.setUp(url, true, new File(FileUtils.getPath()), "");
 
         //借用了jjdxm_ijkplayer的URL
-        String source1 = "https://res.exexm.com/cw_145225549855002";
+        String source1 = "rtmp://42.159.206.249:1935/1001/31117091";
         String name = "普通";
         SwitchVideoModel switchVideoModel = new SwitchVideoModel(name, source1);
 
