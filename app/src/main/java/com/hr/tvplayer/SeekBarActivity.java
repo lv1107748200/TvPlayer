@@ -27,5 +27,6 @@ public class SeekBarActivity extends Activity{
 
     public void onClick(View view){
 
+
     }
 }
