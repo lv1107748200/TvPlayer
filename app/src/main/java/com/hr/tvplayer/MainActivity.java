@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         btnJian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,OnKeyActivity.class);
+                Intent intent = new Intent(MainActivity.this,SeekBarActivity.class);
 
                 startActivity(intent);
             }
