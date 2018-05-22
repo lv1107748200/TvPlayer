@@ -32,14 +32,14 @@ public class SeekBarActivity extends Activity{
 
         windowManager = (WindowManager)this.getSystemService(Context.WINDOW_SERVICE);
         params = new WindowManager.LayoutParams();
-        params.height = 200;
-        params.width = 400;
+        params.height = 80;
+        params.width = 300;
         params.format = PixelFormat.TRANSLUCENT;
         params.type = WindowManager.LayoutParams.TYPE_APPLICATION_PANEL;
         params.flags =
                 WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH
                         | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
-        params.gravity = Gravity.CENTER;
+        params.gravity = Gravity.TOP|Gravity.LEFT;
 
     }
 
@@ -52,10 +52,13 @@ public class SeekBarActivity extends Activity{
 
                 break;
             case R.id.btn_change:
-
-                params.gravity = Gravity.BOTTOM;
+                params.x = 200;
+                params.y = 400;
                 windowManager.updateViewLayout(linearLayout,params);
 
+                break;
+            case R.id.btn_close:
+                windowManager.removeViewImmediate(linearLayout);
                 break;
         }
 
