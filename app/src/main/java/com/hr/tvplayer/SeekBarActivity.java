@@ -47,11 +47,11 @@ public class SeekBarActivity extends Activity{
         switch (view.getId()){
             case R.id.btn_show:
 
-
                 windowManager.addView(linearLayout, params);
 
                 break;
             case R.id.btn_change:
+
                 params.x = 200;
                 params.y = 400;
                 windowManager.updateViewLayout(linearLayout,params);

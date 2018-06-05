@@ -37,7 +37,7 @@ public class MainActivity extends FragmentActivity
         MediaPlayer.MediaPlayerCircleStartListener //循环播放开始
 {
 
-    private String url = "https://res.exexm.com/cw_145225549855002";
+    private String url = "http://qt1.alivecdn.com/timeline/cctv5td.m3u8?auth_key=1523725203-0-0-11caa0a4ead86d9f1a8eb700be7aafe2";
    // private String url = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
 
     private AliVcMediaPlayer mPlayer;//阿里控制中心
@@ -116,7 +116,7 @@ public class MainActivity extends FragmentActivity
 
         //打开、关闭播放器日志
         mPlayer.enableNativeLog();
-        mPlayer.setVideoScalingMode(MediaPlayer.VideoScalingMode.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
+        mPlayer.setVideoScalingMode(MediaPlayer.VideoScalingMode.VIDEO_SCALING_MODE_SCALE_TO_FIT);
 //        mPlayer.disableNativeLog();
 
         mPlayer.prepareToPlay(url);
